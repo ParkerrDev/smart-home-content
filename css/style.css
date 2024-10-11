@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Zen+Antique+Soft&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: black;
+    font-family: 'Inter';
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    max-width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0.5em;
+    margin-top: 0;
+    font-family: 'Inter';
+    font-size: 2rem;
+}
+
+
+header {
+    position: sticky;
+    top: 1rem;
+    z-index: 999;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-top: -10vh;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border-radius: 1rem;
+    background: transparent;
+    font-family: 'Inter';
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    padding: 1em;
+    border-radius: 5px;
+    background: transparent;
+    font-size: 24px;
+    text-decoration: none;
+    text-shadow: -2px 2px 10px #00263a;
+    text-transform: uppercase;
+    color: white;
+}
+
+header nav ul li a.active {
+    color: dodgerblue;
+}
+
+header nav ul li a:hover {
+    border-radius: 20px;
+    background-color: #0071ff;
+    text-decoration: none;
+    text-shadow: -2px 2px 10px #00263a00;
+    color: white;
+    transition: all .1s;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80vh;
+    margin: 0;
+    background-attachment: fixed;
+    background-position: 0 67%;
+    background-size: cover;
+}
+
+
+body:not(#home) #hero {
+    height: 50vh;
+}
+
+body:not(#home) #hero h1 {
+    font-size: 3rem;
+}
+
+#hero {
+    background-image: url(../images/smart-home.jpg);
+}
+
+#hero article {
+    width: auto;
+    height: auto;
+    padding: 2em;
+    border-radius: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: whitesmoke;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+    line-height: 1.5em;
+}
+
+#hero h1 {
+    margin-top: 7%;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.25);
+    color: whitesmoke;
+}
+
+.description {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+.button {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 0.5em 1em;
+    border-radius: 0.33em;
+    background-color: #005D8F;
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    transition: color ease 200ms, background ease 200ms;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+article p {
+    font-weight: lighter;
+}
+
+.halves p {
+    font-size: 32px;
+}
+
+.backdrop-blur {
+    backdrop-filter: blur(10px);
+}
+
+.split article {
+    width: 50%;
+    padding: 0vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    margin-top: 2em;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer hr {
+    width: 62%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.row.full {
+    width: 100vw;
+}
+
+.thirds article {
+    width: 30%;
+}
+
+.halves article {
+    width: 48%;
+}
+
+.cards article,
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.33);
+}
+
+.cards article img,
+.card img {
+    border: none;
+    border-radius: 1rem;
+}
+
+.cards article h2,
+.cards article h3,
+.cards article p,
+.card h2,
+.card h3,
+.card p {
+    padding: 0 1rem;
+}
+
+.cards article a,
+.card a {
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+    float: left;
+}
+
+.cards .button,
+.card .button {
+    border-radius: 1rem;
+}
+
+.scaled-img {
+    width: 610px;
+    height: auto;
+    object-fit: cover;
+}
+
+.row.halves>img {
+    width: 48%;
+}
