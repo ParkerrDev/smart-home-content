@@ -101,7 +101,7 @@ body:not(#home) #hero h1 {
 }
 
 #hero {
-    background-image: url(../images/smart-home.jpg);
+    background-image: url(../images/smart-home.webp);
 }
 
 #hero article {
